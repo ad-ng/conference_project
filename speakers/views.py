@@ -11,3 +11,7 @@ def speaker_list(request):
     ]
     context = {'speakers': speakers}
     return render(request, 'speakers/speaker_list.html', context)
+     context = {'speakers': speakers}
+    return render(request, 'speakers/speaker_list.html', context)
+def create_speaker(request):
+    return render(request, ' speakers/create_speaker.html')
